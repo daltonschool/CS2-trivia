@@ -30,7 +30,7 @@ public class TriviaQuestionDemo {
         pregunta.options[3] = response.getBody().getArray().getJSONObject(0).get("option4").toString();
         pregunta.answer = response.getBody().getArray().getJSONObject(0).getInt("answers")-1;;
 
-        System.out.println();
+        System.out.println(pregunta.question);
 
 
     }
